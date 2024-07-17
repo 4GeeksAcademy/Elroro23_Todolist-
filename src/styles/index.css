@@ -10,3 +10,24 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.todo-list {
+    position: relative; /* Posicionamos el icono */
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  .fa-trash {
+    display: none; /* Ocultamos el icono al principio*/
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+  }
+  
+  .todo-list:hover .fa-trash {
+    display: block; /* Mostramos el icono cuando posamos el mouse sobre la tarea */
+  }
